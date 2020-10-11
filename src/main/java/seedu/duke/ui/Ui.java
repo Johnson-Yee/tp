@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class Ui {
 
     public static String getCommand() {
-        Scanner in = new Scanner(System.in);
-        return in.nextLine();
+        Scanner userInput = new Scanner(System.in);
+        return userInput.nextLine();
     }
 
     public static void printWelcomeMessage() {
