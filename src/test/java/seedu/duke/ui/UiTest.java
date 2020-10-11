@@ -5,16 +5,16 @@ import org.junit.jupiter.api.Test;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class UiTest {
 
     @Test
-    void getCommand_success(){
+    void getCommand_success() {
         String command = "/routemap";
         InputStream in = new ByteArrayInputStream(command.getBytes());
         System.setIn(in);
         String actualOutput = Ui.getCommand();
-        assertEquals("/routemap",actualOutput);
+        assertEquals("/routemap", actualOutput);
     }
 }
