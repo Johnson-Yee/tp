@@ -17,4 +17,5 @@ class UiTest {
         String actualOutput = Ui.getCommand();
         assertEquals("/routemap", actualOutput);
     }
+
 }

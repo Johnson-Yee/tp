@@ -4,9 +4,8 @@ import java.util.Scanner;
 
 public class Ui {
 
-    private static Scanner in = new Scanner(System.in);
-
     public static String getCommand() {
+        Scanner in = new Scanner(System.in);
         return in.nextLine();
     }
 
@@ -22,9 +21,6 @@ public class Ui {
 
     public static void showError(Exception error) {
         System.out.println(error);
-    }
-
-    public static void commandList() {
     }
 
     public static void printExitMessage() {
