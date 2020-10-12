@@ -3,10 +3,10 @@ package seedu.duke.ui;
 import java.util.Scanner;
 
 public class Ui {
+    private static Scanner in = new Scanner(System.in);
 
     public static String getCommand() {
-        Scanner userInput = new Scanner(System.in);
-        return userInput.nextLine();
+        return in.nextLine();
     }
 
     public static void printWelcomeMessage() {
